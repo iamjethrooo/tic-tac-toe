@@ -15,6 +15,11 @@ body {
   width: 100vw;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer */
 footer {
   width: 100%;
@@ -36,3 +41,16 @@ footer {
   }
 }
 /* Footer */
+
+#game-board {
+  height: 350px;
+  width: 350px;
+  display: grid;
+  row-gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+  background: blue;
+  border: 1px solid black;
+}
