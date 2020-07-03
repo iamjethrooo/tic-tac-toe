@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 /* Basic resets */
 * {
   padding: 0;
@@ -9,6 +10,7 @@
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
@@ -47,10 +49,43 @@ footer {
   width: 350px;
   display: grid;
   row-gap: 0;
+  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
 
 .cell {
-  background: blue;
-  border: 1px solid black;
+  align-items: center;
+  border: 3px solid #5499c7;
+  color: #5499c7;
+  cursor: pointer;
+  display: flex;
+  font-size: 65px;
+  font-weight: 700;
+  justify-content: center;
+  transition: 0.2s all ease;
+  user-select: none;
+  &:hover {
+    background: #eaf2f8;
+  }
+}
+
+#game-board :nth-child(1),
+:nth-child(2),
+:nth-child(3) {
+  border-top: none;
+}
+#game-board :nth-child(7),
+:nth-child(8),
+:nth-child(9) {
+  border-bottom: none;
+}
+#game-board :nth-child(1),
+:nth-child(4),
+:nth-child(7) {
+  border-left: none;
+}
+#game-board :nth-child(3),
+:nth-child(6),
+:nth-child(9) {
+  border-right: none;
 }
