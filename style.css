@@ -31,6 +31,8 @@ header {
 
 /* Footer */
 footer {
+  color: #5499c7;
+  font-weight: 700;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -88,5 +90,57 @@ footer {
 :nth-child(6),
 :nth-child(9) {
   border-right: none; }
+
+.player-name {
+  color: #5499c7;
+  font-size: 30px;
+  font-weight: 700; }
+
+.score {
+  color: #5499c7;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center; }
+
+#modal-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0; }
+
+#modal {
+  background-color: #eaf2f8;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0; }
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+#winner {
+  color: #5499c7;
+  font-size: 50px;
+  font-weight: 700; }
+
+#play-again,
+#reset {
+  border: none;
+  color: #5499c7;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
