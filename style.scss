@@ -28,7 +28,8 @@ header {
   color: #5499c7;
   font-size: 50px;
   font-weight: 700;
-  padding: 10px;
+  padding: 15px;
+  text-align: center;
   user-select: none;
   width: 100%;
 }
@@ -104,9 +105,13 @@ footer {
 }
 
 .player-name {
+  background: none;
+  border: none;
   color: #5499c7;
   font-size: 30px;
   font-weight: 700;
+  max-width: 200px;
+  text-align: center;
 }
 
 .score {
@@ -131,7 +136,7 @@ footer {
 
 #modal {
   background-color: #eaf2f8;
-  width: 30%; /* Could be more or less, depending on screen size */
+  width: 40%;
   height: 100%;
   display: none;
   flex-direction: column;
@@ -160,4 +165,7 @@ footer {
   cursor: pointer;
   font-size: 30px;
   font-weight: 700;
+  &:hover {
+    transform: scale(1.5);
+  }
 }

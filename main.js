@@ -13,23 +13,22 @@ const gameBoard = (() => {
   scoreboard2.className = "scoreboard";
 
   // Scoreboard 1
-  const name1 = document.createElement("div");
+  const name1 = document.createElement("input");
   name1.className = "player-name";
-  name1.contentEditable = true;
+  name1.placeholder = "Player 1";
   name1.spellcheck = false;
   name1.id = "player1-name";
-  name1.innerText = "Player 1";
 
   const score1 = document.createElement("div");
   score1.className = "score";
   score1.id = "player1-score";
   score1.innerText = "0";
 
-  const name2 = document.createElement("div");
+  const name2 = document.createElement("input");
   name2.className = "player-name";
-  name2.contentEditable = true;
+  name2.placeholder = "Player 2";
   name2.spellcheck = false;
-  name2.id = "player1-name";
+  name2.id = "player2-name";
   name2.innerText = "Player 2";
 
   const score2 = document.createElement("div");
@@ -147,6 +146,7 @@ const displayController = (() => {
         } else game.player2.score++;
         updateScoreboard();
         showWinScreen();
+        game.togglePlayer();
       } else game.togglePlayer();
     }
   };
